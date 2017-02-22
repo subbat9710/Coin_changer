@@ -39,4 +39,7 @@ class TestCoinChanger < Minitest::Test
     def test_25_cents_returns_1_quarter_hash
     	assert_equal({:quarter => 1}, make_change(25)) #expecting quarter for 25 cents.
     end
+    def test_31_cents_returns_1_quarter_1_penny_hash
+    	assert_equal({:quarter => 1, :nickel => 1, :penny => 1}, make_change(31)) #expecting 1 quarter, 1 nickel & 1 penny for 31 cents.
+    end
 end
