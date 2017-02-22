@@ -1,7 +1,11 @@
 def make_change(amount)
 	change = {}
+	if amount >= 10  #represents any number less than 10.
+		change[:dime] = 1 #represents for 10 cents to dime  for amount 10.
+		amount -= 10     
+	end
 	if amount >= 5 
-		change[:nickel] = 1  #it represents for 5 cents for amount 5.
+		change[:nickel] = 1  #it represents for 5 cents to nickel for amount 5.
 	    amount -= 5       
 	end
 	if  amount >= 1    # amount is for less than or equal to 1.
