@@ -1,7 +1,11 @@
 def make_change(amount)
 	change = {}
+	if amount >= 25  
+		change[:quarter] = 1 #represents quarter for 25 cents.
+		amount -= 25
+	end
 	if amount >= 20
-		change[:dime] = 2
+		change[:dime] = 2 #represent 2 dimes for 20 cents.
 		amount -= 20
 	end
 	if amount >= 10  #represents any number less than 10.
