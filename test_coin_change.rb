@@ -30,4 +30,7 @@ class TestCoinChanger < Minitest::Test
     def test_19_cents_returns_1_dime_1_nickel_4_pennies_hash
     	assert_equal({:dime => 1, :nickel => 1, :penny => 4}, make_change(19)) #expecting 1dime,1nickel & 4pennies for 19 cents.
     end
+    def test_20_cents_returns_2_dimes_hash
+    	assert_equal({:dime => 2}, make_change(20)) #expecting nickel for 5 cents.
+    end
 end

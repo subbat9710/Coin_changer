@@ -1,5 +1,9 @@
 def make_change(amount)
 	change = {}
+	if amount >= 20
+		change[:dime] = 2
+		amount -= 20
+	end
 	if amount >= 10  #represents any number less than 10.
 		change[:dime] = 1 #represents for 10 cents to dime  for amount 10.
 		amount -= 10     
