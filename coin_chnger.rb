@@ -1,7 +1,7 @@
 def make_change(amount)
 	change = {}
 	if amount >= 50
-		change[:quarter] = 2
+		change[:quarter] = 2 #represents for 50 cents to get 2 quarter.
 		amount -= 50
 	end
 	if amount >= 25  
