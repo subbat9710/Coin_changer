@@ -30,26 +30,39 @@
 #		change  #empty hash represents the amount   	
 #end
 #------------#UPDATE-------------#
+#def make_change(amount)
+#	change = {}
+#	coins = {quarter: 25, dime: 10, nickel: 5, penny: 1}
+#    if amount >= coins[:quarter]
+#    	number_coins = amount/coins[:quarter]
+#    	change[:quarter] = number_coins
+#    	amount -= coins[:quarter] * number_coins
+#    end
+#    if amount >= coins[:dime]
+#    	number_coins = amount/coins[:dime]
+#    	change[:dime] = number_coins
+#    	amount -= coins[:dime] * number_coins
+#    end
+#    if amount >= coins[:nickel]
+#    	number_coins = amount/coins[:nickel]
+#    	change[:nickel] = number_coins
+#    	amount -= coins[:nickel] * number_coins
+#    end
+#    if amount >= coins[:penny]
+#    	change[:penny] = amount
+#    end
+#    change
+#end
+#-----------Making Smaller--------------#
 def make_change(amount)
 	change = {}
 	coins = {quarter: 25, dime: 10, nickel: 5, penny: 1}
-    if amount >= coins[:quarter]
-    	number_coins = amount/coins[:quarter]
-    	change[:quarter] = number_coins
-    	amount -= coins[:quarter] * number_coins
+	coins.each do |coin, value|
+	if amount >= value
+		number_coins = amount/value
+		change[coin] = number_coins
+		amount -= value * number_coins
     end
-    if amount >= coins[:dime]
-    	number_coins = amount/coins[:dime]
-    	change[:dime] = number_coins
-    	amount -= coins[:dime] * number_coins
-    end
-    if amount >= coins[:nickel]
-    	number_coins = amount/coins[:nickel]
-    	change[:nickel] = number_coins
-    	amount -= coins[:nickel] * number_coins
-    end
-    if amount >= coins[:penny]
-    	change[:penny] = amount
-    end
+   end
     change
 end
