@@ -1,9 +1,12 @@
-body {
-	background-color: red;
+/*body {
+	background-color: powderblue;
 }
 h1 {
-	color: blue
+	color: blue;
 }
+h2 {
+	color: red;
+}*/
 .center {
 	text-align: center; /*puts class in the center*/
 }
@@ -18,7 +21,7 @@ form {
 	text-align: center; /*puts form in the center*/
 }
 
-footer{ 
+.footer{ 
       background-color: grey; 
        position: fixed;     
        text-align: center;    
@@ -26,5 +29,5 @@ footer{
        width: 100%;
 }
 body{
-	background-image: url("img/coin.jpg");
+	background-image: url=("coin.jpg");
 }
