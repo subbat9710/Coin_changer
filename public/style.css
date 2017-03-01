@@ -22,3 +22,6 @@ footer{
 body{
 	background-image: url("img/coins.jpg");
 }
+.outside {
+	border-bottom-style:solid;
+	}
