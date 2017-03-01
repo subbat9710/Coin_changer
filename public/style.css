@@ -1,9 +1,3 @@
-body {
-	background-color: red;
-}
-h1 {
-	color: blue
-}
 .center {
 	text-align: center; /*puts class in the center*/
 }
@@ -26,5 +20,5 @@ footer{
        width: 100%;
 }
 body{
-	background-image: url("img/coin.jpg");
+	background-image: url("img/coins.jpg");
 }
