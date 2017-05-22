@@ -3,6 +3,9 @@ Descriptions: This project created to show the values into coins values like qua
 
 ## Requirements
 -> Ruby gem should be installed.
+
 -> Sinatra gem should be installed.
+
 -> To run the app type $ app.rb in your terminal.
+
 -> rackup required to load on port 4567(mac)
